@@ -12,7 +12,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 class BrowserHelper:
-    def __init__(self, browser: str = "chrome", arguments: list[str] = ["--headless"]) -> None:
+    def __init__(self, browser: str = "chrome", arguments: "list[str]" = ["--headless"]) -> None:
         self.browser = browser
         self.arguments = set(arguments)
     
